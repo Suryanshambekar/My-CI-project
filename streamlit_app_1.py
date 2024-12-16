@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
 # Load dataset
-@st.cache
+@st.cache_data
 def load_data():
     # Load and preprocess the dataset
     df = pd.read_csv("nasa.csv")  # Ensure 'nasa.csv' is in the working directory
